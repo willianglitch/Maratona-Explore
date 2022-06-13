@@ -36,15 +36,23 @@ const respostas = [
 // fazer pergunta
 function fazerPerguntar(){
 
-if(inputPerguntar.value == ""){
-  alert(" facar uma pergunta...")
-  return
-}
+  if(inputPerguntar.value == ""){
+    alert(" facar uma pergunta...")
+    return
+  }
 
-const totalRespostas = respostas.length
-const numeroAleatoria = Math.floor(Math.random() * totalRespostas)
+  const pergunta = "<div>" + inputPerguntar.value +"</div>"
 
-elementoResposta.innerHTML = respostas[numeroAleatoria]
+  const totalRespostas = respostas.length
+  const numeroAleatoria = Math.floor(Math.random() * totalRespostas)
 
+  elementoResposta.innerHTML = pergunta + respostas[numeroAleatoria]
 
+  // sumir a resposta depois de um tempo 
+    setTimeout(function(){
+      elementoResposta.style.opacity = 0;
+    },3000)
+
+    inputPerguntar.value = ""
+  
 }
