@@ -10,6 +10,7 @@
 
 const elementoResposta = document.querySelector("#resposta")
 const inputPerguntar = document.querySelector("#inputPerguntar")
+const butaoPerguntar = document.querySelector("#butaoPerguntar")
 
 const respostas = [
   " Certamente!!",
@@ -41,6 +42,7 @@ function fazerPerguntar(){
     return
   }
 
+  butaoPerguntar.setAttribute("disabled",true)
   const pergunta = "<div>" + inputPerguntar.value +"</div>"
 
   const totalRespostas = respostas.length
@@ -50,9 +52,10 @@ function fazerPerguntar(){
 
   // sumir a resposta depois de um tempo 
     setTimeout(function(){
-      elementoResposta.style.opacity = 0;
+      elementoResposta.style.opacity = 0.5;
+      butaoPerguntar.removeAttribute("disabled")
     },3000)
 
-    inputPerguntar.value = ""
-  
+    inputPerguntar.value ="";
+
 }
