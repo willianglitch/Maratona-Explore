@@ -10,7 +10,7 @@
 <div align="center"> 
  
  <h2>https://willianglitch.github.io/Maratona-Explore/</h2>
-<img src="https://user-images.githubusercontent.com/90284411/173831765-c7ae532c-49cb-4ece-b82c-d60115ad9698.png" height="350px" />
+<img src="https://user-images.githubusercontent.com/90284411/173831765-c7ae532c-49cb-4ece-b82c-d60115ad9698.png" height="320px" />
  
 <img src="https://user-images.githubusercontent.com/90284411/173832806-bd269b37-cd7e-4d68-aae0-6b6232b63bb0.jpeg" height="500px" />
 </div>
